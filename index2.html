@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>모닝미스트 - 자연에서 깨어나는 아침</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background: #f0fdf4;
+      color: #2e3a34;
+      line-height: 1.6;
+    }
+    a { text-decoration: none; }
+
+    header {
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      padding: 120px 20px;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+    }
+    header h1, header p, .cta {
+      position: relative;
+      z-index: 1;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+    }
+    header p {
+      font-size: 1.4rem;
+      margin-top: 15px;
+    }
+    .cta {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 15px 35px;
+      background-color: #34d399;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 30px;
+      transition: 0.3s ease;
+    }
+    .cta:hover {
+      background-color: #059669;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 40px 20px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    }
+    section:nth-child(even) {
+      background: #ecfdf5;
+    }
+    h2 {
+      color: #065f46;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+
+    .image-row {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      justify-content: center;
+    }
+    .image-row img {
+      border-radius: 10px;
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .feature {
+      background: #d1fae5;
+      padding: 20px;
+      border-radius: 10px;
+      border-left: 5px solid #10b981;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    .video-container iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+      color: #666;
+      background: #def7ec;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header>
+    <h1>모닝미스트</h1>
+    <p>자연의 감각으로 조용하고 상쾌한 아침을 시작하세요</p>
+    <a href="#contact" class="cta">문의하기</a>
+  </header>
+
+  <!-- 자연 이미지 섹션 -->
+  <section>
+    <h2>자연의 영감</h2>
+    <p>모닝미스트는 자연에서 영감을 받은 기술로 만들어졌습니다. 풀, 나무, 물, 햇살의 감각을 담은 스마트 알람으로 하루를 평화롭게 시작하세요.</p>
+    <div class="image-row">
+      <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=600&q=80" alt="풀잎">
+      <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=600&q=80" alt="햇살이 비치는 나무">
+      <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=600&q=80" alt="고요한 물방울">
+      <img src="https://images.unsplash.com/photo-1533667586627-71e116b8eaf7?auto=format&fit=crop&w=600&q=80" alt="이슬 맺힌 풀잎">
+    </div>
+  </section>
+
+  <!-- 제품 기능 -->
+  <section>
+    <h2>주요 기능</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>미세 수분 분사</h3>
+        <p>자연스러운 촉감 자극으로 소리 없이 기상</p>
+      </div>
+      <div class="feature">
+        <h3>습도 조절</h3>
+        <p>쾌적한 실내 환경을 위한 자동 습도 조절</p>
+      </div>
+      <div class="feature">
+        <h3>앱 연동</h3>
+        <p>수면 패턴 분석과 맞춤형 기상 추천 기능</p>
+      </div>
+      <div class="feature">
+        <h3>소음 없는 기상</h3>
+        <p>공동생활 환경에서 타인 배려 가능</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 제품 영상 -->
+  <section>
+    <h2>제품 데모 영상</h2>
+    <p>모닝미스트의 작동 방식을 확인해보세요.</p>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/영상링크-삽입" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- 후기 -->
+  <section>
+    <h2>사용자 후기</h2>
+    <ul>
+      <li>“아침이 이렇게 평화로울 수 있다니!” – 김서현</li>
+      <li>“건강하고 조용한 기상 덕분에 하루가 달라졌어요.” – 민준호</li>
+      <li>“룸메이트랑 싸우지 않아도 돼서 좋아요.” – 유하진</li>
+    </ul>
+  </section>
+
+  <!-- 브랜드 철학 -->
+  <section>
+    <h2>자연을 닮은 기술</h2>
+    <p>모닝미스트는 사람의 리듬과 자연의 흐름을 존중하는 기술로, 소란스러운 알람 대신 부드러운 자극으로 새로운 아침 문화를 제안합니다.</p>
+  </section>
+
+  <!-- 문의 -->
+  <section id="contact">
+    <h2>지금 문의하세요</h2>
+    <p>웰니스 중심의 기상 혁신, 지금 경험해보세요.</p>
+    <a class="cta" href="mailto:contact@morningmist.co.kr">이메일 문의</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 모닝미스트 | 자연에서 깨어나는 하루
+  </footer>
+
+</body>
+</html>
